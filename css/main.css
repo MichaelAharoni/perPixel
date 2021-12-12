@@ -1,0 +1,360 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* FONTS */
+@font-face {
+    font-family: eurofurence;
+    src: url(/fonts/eurofurence/eurof55.ttf);
+}
+
+@font-face {
+    font-family: latoRegular;
+    src: url(/fonts/lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: latoBold;
+    src: url(/fonts/lato/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: fa;
+    src: url(/fonts/fa/fa-brands-400.ttf);
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #292929;
+    align-items: center;
+    box-shadow: inset 0px -6px #1E1E1E;
+}
+
+.clean-list {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+.clean-a {
+    text-decoration: none;
+    color:inherit;
+}
+
+.nav-container a {
+    color: #FFFFFF;
+}
+
+.nav-container {
+    display: flex;
+}
+
+header ul li{
+height: 130px;
+width: 130px;
+}
+
+header ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'latoBold';
+    border-inline-end: 1px solid #1D1D1D;
+    height: 100%;
+    width: 100%;
+}
+
+a.active {
+    color: #50c93a;
+    box-shadow: inset 0px -6px #58C93A;
+}
+
+header ul li:first-of-type {
+border-inline-start: 1px solid #1D1D1D;
+}
+
+header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    flex-grow: 1;
+}
+
+.logo {
+    font-family: 'eurofurence';
+    font-size: 2.5rem;
+    color: #FFFFFF;
+}
+
+.logo span {
+    color: #58C93A;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    border-inline-start: 1px solid #E1E0E0;
+    border-inline-end: 1px solid #E1E0E0;
+    max-width: 980px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    
+}
+
+.card-img {
+    flex-grow: 1;
+}
+
+.card-img img {
+    width: 100%;
+    padding-inline-end: 20px;
+}
+
+.card-info {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-inline-start: 20px;
+    padding-right: 25px;
+}
+
+.card-info p:last-of-type  {
+    flex-grow: 1;
+}
+
+.card-info h1 {
+    font-family: 'latoBold';
+    text-transform: uppercase;
+    color: #4F4E4E;
+    font-size: 1.75em;
+    letter-spacing: 0.062rem;
+    line-height: 1.885rem;
+    margin-bottom: 58px;
+}
+
+.card-info p {
+    color: #606060;
+    font-family: 'latoRegular';
+}
+
+.card-info button {
+    color: #C2C2C2;
+    border: 2px solid #C2C2C2;
+    background-color: #fff;
+    border-radius: 2em;
+    line-height: 2.25em;
+    font-size: 1em;
+    padding: 0 1.5625em;
+    cursor: pointer;
+    position: relative;
+    transition: padding .3s;    
+}
+
+.card-info button:hover {
+    color: #50c93a;
+    border-color: #50c93a;
+    padding-inline-end: 2.625em;
+}
+
+.card-info button:hover:after {
+    content: "→";
+    position: absolute;
+    right: 0.8125em;
+}
+
+
+.arrows-container {
+    border-top: 1px solid #e1dfdf;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #818181;
+    height: 4.6875rem;
+    align-items: center;
+    font-family: 'latoBold';
+}
+
+.arrow {
+    font-size: 14px;
+}
+
+.next {
+    margin-inline-end: 2rem;
+}
+
+.previus {
+    margin-inline-start: 2rem;
+}
+
+.next-arrow {
+    margin-inline-start: 0.562rem;
+    
+}
+
+.previus-arrow {
+    margin-inline-end: 0.562rem;
+}
+
+.arrows:hover {
+    transition: color 0.5s;
+    color: #58C93A;
+    cursor: pointer;
+}
+
+footer {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F8F8;
+}
+
+.logo.bottom {
+    color: #292929;
+    padding-bottom: 40px;
+}
+
+footer small {
+    color: #A6A6A6;
+    font-family: 'latoRegular';
+    font-size: 0.8125em;
+    border-bottom: 40px;
+}
+
+footer small span {
+    font-weight: bolder;
+}
+
+footer ul {
+    margin-bottom: 75px;
+    display: flex;
+    padding: 0;
+}
+
+footer ul li:not(:first-child) {
+    margin-left: 15px;
+}
+
+.fa {
+    font-family: 'fa';
+    height: 100%;
+    width: 100%;
+}
+
+.facebook::before {
+content: '\f082';
+}
+.twitter::before {
+content: '\f099';
+}
+.behance::before {
+content: '\f1b5';
+}
+.dribble::before {
+content: '\f397';
+}
+
+.facebook:hover {
+    color: blue;
+}
+.twitter:hover {
+    color: rgb(0, 183, 255);
+}
+.behance:hover {
+    color: rgb(179, 255, 0);
+}
+.dribble:hover {
+    color: rgb(255, 196, 0);
+}
+
+.social-nav > * {
+    background-color: #5e5e5e;
+    height: 40px;
+    width: 40px;
+}
+
+.social-nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5e5e5e;
+    background-color: #F8F8F8;
+    font-size: 2.2em;
+}
+
+@media screen and (max-width:1000px) {
+    header section {
+    max-width: 766px;
+    }
+    
+    header ul li {
+    height: 100px;
+    }
+
+    .cards-container {
+        max-width: 766px;
+    }
+    .card-info h1 {
+        margin-bottom: 10px;
+        font-size: 1.4em;
+    }
+    .card-info p{
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width:766px) {
+    .card {
+        flex-wrap: wrap;
+    }
+    .card-img {
+        max-width: 100%;
+    }
+    .card-img img {
+        padding-inline-start: 20px;
+    }
+    .card-info {
+        max-width: 100%;
+        margin:0 20px;
+        padding:0 0;
+    }
+    .card-info button {
+        display: none;
+    }
+    header section {
+        max-width: 515px;
+    }
+    .cards-container {
+    max-width: 515px;
+    }
+    header ul li {
+    max-width: 100px;
+    }
+}
